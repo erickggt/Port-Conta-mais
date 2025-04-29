@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="charme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Mais - Soluções Contábeis Inteligentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="bg-blue-700 text-white p-2 rounded-lg mr-3">
+                        <i class="fas fa-calculator text-2xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-blue-800">Conta Mais</h1>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-blue-700 font-medium hover:text-blue-900">Início</a>
+                    <a href="#servicos" class="text-gray-600 hover:text-blue-700">Serviços</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-blue-700">Sobre Nós</a>
+                    <a href="#contato" class="text-gray-600 hover:text-blue-700">Contato</a>
+                </nav>
+
+                <button class="md:hidden text-blue-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="gradient-bg text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 py-20 md:py-32">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Soluções contábeis para o seu negócio</h2>
+                    <p class="text-xl mb-8 opacity-90">Simplificamos a contabilidade para que você possa focar no que
+                        realmente importa: o crescimento do seu negócio.</p>
+                    <button
+                        class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300">
+                        Fale com um especialista
+                    </button>
+                </div>
+
+                <!--formulario-->
+
+                <div class="md:w-1/2">
+                    <div class="bg-white rounded-xl p-8 form-shadow max-w-md mx-auto">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-6">Solicite uma consultoria gratuita</h3>
+                        <form id="leadForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Nome completo</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">E-mail</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-2">Telefone</label>
+                                <input type="tel" id="phone"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="business" class="block text-gray-700 mb-2">Tipo de negócio</label>
+                                <select id="business"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="">Selecione...</option>
+                                    <option value="mei">MEI</option>
+                                    <option value="ltda">LTDA</option>
+                                    <option value="sa">S/A</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-700 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-800 transition duration-300">
+                                Enviar solicitação
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-shape">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Nossos Serviços</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas para todas as
+                    necessidades contábeis do seu negócio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl hover-scale">
+                    <div
+                        class="bg-blue-700 text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Contabilidade Completa</h3>
+                    <p class="text-gray-600">Gestão completa da contabilidade da sua empresa, incluindo balanços, DRE e
+                        demais obrigações fiscais.</p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl hover-scale">
+                    <div
+                        class="bg-blue-700 text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-holding-usd text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Planejamento Tributário</h3>
+                    <p class="text-gray-600">Identificamos o melhor regime tributário para sua empresa, reduzindo custos
+                        e maximizando resultados.</p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl hover-scale">
+                    <div
+                        class="bg-blue-700 text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-user-tie text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Departamento Pessoal</h3>
+                    <p class="text-gray-600">Cuidamos de toda a folha de pagamento, benefícios e obrigações trabalhistas
+                        da sua empresa.</p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl hover-scale">
+                    <div
+                        class="bg-blue-700 text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Consultoria Financeira</h3>
+                    <p class="text-gray-600">Ajudamos você a tomar decisões estratégicas com base em análises
+                        financeiras detalhadas.</p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl hover-scale">
+                    <div
+                        class="bg-blue-700 text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Regularização Fiscal</h3>
+                    <p class="text-gray-600">Regularizamos sua situação fiscal junto aos órgãos competentes, evitando
+                        multas e penalidades.</p>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-xl hover-scale">
+                    <div
+                        class="bg-blue-700 text-white p-3 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-3">Contabilidade Digital</h3>
+                    <p class="text-gray-600">Acesso online a todos os documentos e relatórios da sua empresa, de
+                        qualquer lugar e a qualquer momento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                        alt="Equipe Conta Mais" class="rounded-xl shadow-lg w-full">
+                </div>
+
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Sobre a Conta Mais</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Fundada em 2010, a Conta Mais nasceu com o propósito de
+                        simplificar a contabilidade para pequenas e médias empresas, oferecendo serviços de alta
+                        qualidade a preços acessíveis.</p>
+                    <p class="text-gray-600 mb-8 text-lg">Nossa equipe é composta por contadores especializados e
+                        atualizados com as últimas mudanças na legislação, garantindo que seu negócio esteja sempre em
+                        conformidade com as obrigações fiscais.</p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-700"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">+ de 500 clientes satisfeitos</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-700"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Equipe especializada e certificada</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-700"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Tecnologia de ponta para gestão contábil</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-700"></i>
+                            </div>
+                            <p class="text-gray-700 font-medium">Atendimento personalizado para cada cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-blue-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O que nossos clientes dizem</h2>
+                <p class="text-xl opacity-90 max-w-2xl mx-auto">A satisfação dos nossos clientes é nossa maior
+                    recompensa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"A Conta Mais transformou completamente a gestão financeira da minha empresa.
+                        Agora tenho total controle e tranquilidade com minhas obrigações fiscais."</p>
+                    <div class="flex items-center">
+                        <div
+                            class="bg-white text-blue-700 font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            JF
+                        </div>
+                        <div>
+                            <p class="font-bold">João Ferreira</p>
+                            <p class="text-sm opacity-80">Restaurante Bella Napoli</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"Depois que contratamos a Conta Mais, nossas declarações fiscais nunca mais
+                        atrasaram. O atendimento é excelente e sempre muito ágil."</p>
+                    <div class="flex items-center">
+                        <div
+                            class="bg-white text-blue-700 font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            AS
+                        </div>
+                        <div>
+                            <p class="font-bold">Ana Souza</p>
+                            <p class="text-sm opacity-80">Loja de Roupas Moda Fashion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"O planejamento tributário feito pela Conta Mais nos economizou mais de 20%
+                        em impostos no primeiro ano. Recomendo muito!"</p>
+                    <div class="flex items-center">
+                        <div
+                            class="bg-white text-blue-700 font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            CP
+                        </div>
+                        <div>
+                            <p class="font-bold">Carlos Pereira</p>
+                            <p class="text-sm opacity-80">Transportadora Veloz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-blue-700 rounded-2xl p-12 text-center text-white relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-800 rounded-full opacity-20"></div>
+                <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-blue-800 rounded-full opacity-20"></div>
+
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para simplificar sua contabilidade?</h2>
+                    <p class="text-xl opacity-90 mb-8">Entre em contato conosco hoje mesmo e descubra como podemos
+                        ajudar seu negócio a crescer com segurança fiscal.</p>
+                    <a href="#contato"
+                        class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300">
+                        Fale conosco agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Entre em Contato</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Estamos aqui para responder todas as suas dúvidas sobre nossos
+                        serviços contábeis.</p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Endereço</h4>
+                                <p class="text-gray-600">Av. Paulista, 1000 - São Paulo/SP</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Telefone</h4>
+                                <p class="text-gray-600">(11) 1234-5678</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">E-mail</h4>
+                                <p class="text-gray-600">contato@contamais.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-blue-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Horário de Atendimento</h4>
+                                <p class="text-gray-600">Segunda a Sexta, das 9h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas redes sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="bg-blue-700 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/erick__._._?igsh=MWZsbWQ3NDBzYzk1OQ=="
+                                class="bg-blue-700 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-blue-700 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#"
+                                class="bg-blue-700 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-6">Envie uma mensagem</h3>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="contact-name" class="block text-gray-700 mb-2">Nome</label>
+                                    <input type="text" id="contact-name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="contact-email" class="block text-gray-700 mb-2">E-mail</label>
+                                    <input type="email" id="contact-email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Assunto</label>
+                                <input type="text" id="contact-subject"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="contact-message" class="block text-gray-700 mb-2">Mensagem</label>
+                                <textarea id="contact-message" rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-700 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-800 transition duration-300">
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-white text-blue-700 p-2 rounded-lg mr-3">
+                            <i class="fas fa-calculator text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Conta Mais</h3>
+                    </div>
+                    <p class="text-blue-200">Soluções contábeis inteligentes para o crescimento do seu negócio.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Contabilidade Completa</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Planejamento Tributário</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Departamento Pessoal</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Consultoria Financeira</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Perguntas Frequentes</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-blue-200 mb-4">Assine nossa newsletter para receber dicas e novidades.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail"
+                            class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-blue-700 px-4 py-2 rounded-r-lg hover:bg-blue-800">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-300">
+                <p>&copy; 2023 Conta Mais. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lead Form Submission Script -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const business = document.getElementById('business').value;
+
+            // Here you would typically send this data to your server
+            // For demonstration, we'll just show an alert
+            alert(`Obrigado, ${name}! Sua solicitação foi enviada com sucesso. Entraremos em contato em breve pelo telefone ${phone} ou e-mail ${email}.`);
+
+            // Reset form
+            this.reset();
+
+            // You could also redirect to a thank you page
+            // window.location.href = '/obrigado';
+        });
+    </script>
+</body>
+
+</html>
